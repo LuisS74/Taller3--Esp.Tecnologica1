@@ -1,7 +1,7 @@
 # taller3
 
-Integrantes: Alfredo Avila
-             Cesar Astudilo
+Integrantes: Alfredo Avila,
+             Cesar Astudilo,
              Luis Salazar
 
 ## Project setup
