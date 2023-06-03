@@ -2,7 +2,6 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 
 import ProductList from './pages/ProductList';
 
-
 const routes = [
     {
         name: 'productlist',
