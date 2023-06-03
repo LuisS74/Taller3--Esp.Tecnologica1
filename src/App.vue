@@ -1,5 +1,8 @@
 <template>
   <div>
+        <router-link :to="{ name:'userview', params: { userid: '647178286edc199bff73e81f' }}">AAAA</router-link>
+  </div>
+  <div>
     <RouterView></RouterView>
   </div>
 </template>
