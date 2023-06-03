@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
 import ProductList from './pages/ProductList';
-import ProductView from './pages/ProductView';
+import UserView from './pages/UserView'
 
 const routes = [
   {
@@ -10,9 +10,10 @@ const routes = [
     component: ProductList,
   },
   {
-    name: 'productview',
-    path: '/a',
-    component: ProductView
+    name: 'userview',
+    path: '/user/:userid',
+    component: UserView,
+    props: true
   }
 ];
 

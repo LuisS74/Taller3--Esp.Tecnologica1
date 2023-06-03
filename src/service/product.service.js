@@ -25,7 +25,11 @@ function getDetailsProduct(_id) {
 
 function getDetailsUser(_id) {
     return axios
-      .get(`${BASE_URL}/users/${_id}/reviews`)
+      .get(`${BASE_URL}/users/${_id}/reviews`, {
+        params: {
+          _id
+        }
+      })
       .then((result) => {
         return result.data;
       });
