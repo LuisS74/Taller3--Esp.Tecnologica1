@@ -4,13 +4,6 @@ import ProductList from './pages/ProductList';
 import UserView from './pages/UserView'
 
 const routes = [
-<<<<<<< HEAD
-    {
-        name: 'productlist',
-        path: '/',
-        component: ProductList,
-    },
-=======
   {
     name: 'productlist',
     path: '/',
@@ -22,7 +15,6 @@ const routes = [
     component: UserView,
     props: true
   }
->>>>>>> alfredo
 ];
 
 const router = createRouter({
