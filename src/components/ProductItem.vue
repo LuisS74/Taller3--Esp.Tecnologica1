@@ -11,7 +11,7 @@
           <h5 class="card-title">{{ product.name }}</h5>
           <p class="card-text">{{ product.description }}</p>
           <p class="card-text">${{ product.price }}</p>
-          <div class="btn btn-primary" @click="showReview(product)">
+          <div v-if="showButton" class="btn btn-primary" @click="showReview(product)">
             Ver Reviews
           </div>
         </div>
@@ -27,6 +27,10 @@ export default {
     product: {
       type: Object,
       default: null,
+    },
+    showButton: {
+      type: Boolean,
+      default: true,
     },
   },
   methods: {
@@ -56,3 +60,4 @@ export default {
   padding: 10px;
 }
 </style>
+

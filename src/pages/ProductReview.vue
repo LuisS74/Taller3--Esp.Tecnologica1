@@ -2,7 +2,7 @@
     <div>
         <div v-if="product" class="d-flex flex-row">
             <div class="flex-grow-1">
-                <product-item :product="product"/><br>
+                <product-item :product="product" :show-button="false"/><br>
             </div>
             <div class="custom-product-details">
                 <img :src="product.user.photo" class="img-fluid rounded-circle" :style="{ width: '200px', height: '200px' }"
