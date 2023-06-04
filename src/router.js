@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
 import ProductList from './pages/ProductList';
+<<<<<<< HEAD
 import UserView from './pages/UserView'
 
 const routes = [
@@ -15,6 +16,22 @@ const routes = [
     component: UserView,
     props: true
   }
+=======
+import ProductReview from './pages/ProductReview'
+
+const routes = [
+    {
+        name: 'productlist',
+        path: '/',
+        component: ProductList,
+    },
+    {
+        name: 'product-reviews',
+        path: '/products/:id/reviews',
+        component: ProductReview,
+        props: true,
+    }
+>>>>>>> cesar
 ];
 
 const router = createRouter({
