@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
 import ProductList from './pages/ProductList';
+import ProductReview from './pages/ProductReview'
 
 const routes = [
     {
@@ -8,6 +9,12 @@ const routes = [
         path: '/',
         component: ProductList,
     },
+    {
+        name: 'product-reviews',
+        path: '/products/:id/reviews',
+        component: ProductReview,
+        props: true,
+    }
 ];
 
 const router = createRouter({
